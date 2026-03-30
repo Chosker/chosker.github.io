@@ -54,7 +54,7 @@ permalink: /blog/:title
 ### Collections ###
 collections:
   projects:
-    output: true
+    output: false
     permalink: /projects/:name
 
 
