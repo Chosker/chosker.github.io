@@ -33,10 +33,10 @@ function initTheme() {
 }
 
 function toggleTheme() {
-  const theme = getTheme();
+/*  const theme = getTheme();
   const newTheme = theme === themes.DARK ? themes.LIGHT : themes.DARK;
   setTheme(newTheme);
-  localStorage.setItem(STORAGE_KEY, newTheme);
+  localStorage.setItem(STORAGE_KEY, newTheme);*/
 }
 
 function getTheme() {
