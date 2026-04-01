@@ -2,6 +2,43 @@
 ---
 @import "portfolYOU";
 
+@font-face {
+font-family: 'Martel Sans';
+src: url('/assets/fonts/MartelSans-Regular.ttf') format('truetype'),
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Martel Sans';
+src: url('/assets/fonts/MartelSans-Black.ttf') format('truetype'),
+font-weight: 900;
+font-style: normal;
+}
+@font-face {
+font-family: 'Martel Sans';
+src: url('/assets/fonts/MartelSans-ExtraBold.ttf') format('truetype'),
+font-weight: 700;
+font-style: normal;
+}
+@font-face {
+font-family: 'Martel Sans';
+src: url('/assets/fonts/MartelSans-SemiBold.ttf') format('truetype'),
+font-weight: 600;
+font-style: normal;
+}
+@font-face {
+font-family: 'Martel Sans';
+src: url('/assets/fonts/MartelSans-Light.ttf') format('truetype'),
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: 'Martel Sans';
+src: url('/assets/fonts/MartelSans-ExtraLight.ttf') format('truetype'),
+font-weight: 100;
+font-style: normal;
+}
+
 body { font-family: "Martel Sans"; }
 [data-theme="dark"] body { background-color: #1f2225; }
 #theme-toggler { display: none; }
