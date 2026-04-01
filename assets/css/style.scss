@@ -38,6 +38,16 @@
   font-weight: 100;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-style: italic;
+}
 
 body { font-family: "Martel Sans"; }
 [data-theme="dark"] body { background-color: #1f2225; }
