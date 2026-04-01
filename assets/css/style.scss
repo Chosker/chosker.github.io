@@ -41,6 +41,7 @@
 
 body { font-family: "Martel Sans"; }
 [data-theme="dark"] body { background-color: #1f2225; }
+.mt5 { margin-top: 1rem !important; }
 .navbar-brand::after { display: none; }
 .nav-link { font-size: 22px; }
 #theme-toggler { display: none; }
