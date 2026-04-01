@@ -39,7 +39,7 @@
 
       {% for html_page in filtered_pages %}  
 
-        {%- if page.url contains html_page.url -%}
+        {%- if page.url == html_page.url -%}
           {%- assign active_status = "active" -%}
         {%- else -%}
           {%- assign active_status = "" -%}
