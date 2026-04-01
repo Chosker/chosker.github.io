@@ -29,15 +29,12 @@ author:
   name              : Chosker
   image             : https://chosker.github.io/logo.png
 #  behance           : your_username
-  bluesky           : chosker
 # dribbble          : your_username
 #  email             : username@domain.com
 #  facebook          : your_username
-  github            : chosker
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
-  linkedin          : oscarsanz
 #  medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
@@ -48,6 +45,9 @@ author:
 # vimeo             : your_username
 # youtube           : your_channel_name
 # keybase           : your_username
+  bluesky           : chosker
+  linkedin          : oscarsanz
+  github            : chosker
 
 
 ### Posts ###
