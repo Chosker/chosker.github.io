@@ -23,6 +23,8 @@ nav_exclude:                                            # The following paths ar
   - pages/projects.html
 nav_settings:
   image             : https://chosker.github.io/title.png
+html_pages:
+  about
 
 ### Author Info ###
 author:
