@@ -25,6 +25,7 @@ nav_settings:
   image             : https://chosker.github.io/title.png
 html_pages:
   - about : https://chosker.github.io/
+  - about2 : https://chosker.github.io/2/
 
 ### Author Info ###
 author:
