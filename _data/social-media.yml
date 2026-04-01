@@ -6,6 +6,11 @@ behance:
   icon  : fab fa-behance
   color : 1769ff
 
+bluesky
+  url   : https://www.bsky.app/
+  icon  : fab fa-bluesky
+  color : 006aff
+
 dribbble:
   url   : https://dribbble.com/
   icon  : fab fa-dribbble
