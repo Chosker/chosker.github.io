@@ -6,11 +6,6 @@ behance:
   icon  : fab fa-behance
   color : 1769ff
 
-bluesky:
-  url   : https://bsky.app/profile/
-  icon  : fab fa-bluesky
-  color : 006aff
-
 dribbble:
   url   : https://dribbble.com/
   icon  : fab fa-dribbble
@@ -26,11 +21,6 @@ facebook:
   icon  : fab fa-facebook
   color : 3b5998
 
-github:
-  url   : https://www.github.com/
-  icon  : fab fa-github
-  color : 333333
-
 gitlab:
   url   : https://www.gitlab.com/
   icon  : fab fa-gitlab
@@ -45,11 +35,6 @@ kaggle:
   url   : https://www.kaggle.com/
   icon  : fab fa-kaggle
   color : 20beff
-
-linkedin:
-  url   : https://www.linkedin.com/in/
-  icon  : fab fa-linkedin-in
-  color : 007bb5
 
 medium:
   url   : https://medium.com/@
@@ -85,6 +70,21 @@ twitter:
   url   : https://www.twitter.com/
   icon  : fab fa-twitter
   color : 1da1f2
+
+bluesky:
+  url   : https://bsky.app/profile/
+  icon  : fab fa-bluesky
+  color : 006aff
+
+github:
+  url   : https://www.github.com/
+  icon  : fab fa-github
+  color : 333333
+
+linkedin:
+  url   : https://www.linkedin.com/in/
+  icon  : fab fa-linkedin-in
+  color : 007bb5
 
 vimeo:
   url   : https://www.vimeo.com/
