@@ -27,7 +27,7 @@ a:hover { color: #FFF; text-decoration: none; }
 .navbar { padding: 1.5rem 2rem; margin-left: auto; margin-right: auto; }
 .navbar-brand { margin-bottom: 0px; }
 .navbar-brand::after { display: none; }
-.nav-link { font-size: 22px; }
+.nav-link { font-size: 22px; text-align: right; }
 .link-after, .nav-link::after, .navbar-brand::after, .nav-item.active::after { content: none; }
 .navbar-themed .navbar-nav .nav-link.active, .navbar-themed .navbar-nav .nav-link:hover { color: #0996b4; }
 #theme-toggler { display: none; }
@@ -43,12 +43,6 @@ footer.py-3 { padding: 2rem 0 !important; background: none; border: none; }
 
 
 
-@media (min-width: 576px) {
-  .navbar-nav .nav-link { text-align: right; }
-}
-@media (min-width: 768px) {
-  .navbar-nav .nav-link { text-align: right; }
-}
 @media (min-width: 992px) {
   .navbar-expand-lg { max-width: 960px; }
   .col-lg-6 {
