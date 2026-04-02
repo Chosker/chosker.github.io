@@ -50,7 +50,9 @@ author:
 
 ### Posts ###
 permalink: /blog/:title
-
+blog_settings:
+  title: Fragments
+  content: 
 
 ### Collections ###
 collections:
