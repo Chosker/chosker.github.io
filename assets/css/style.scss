@@ -18,14 +18,16 @@ body { font-family: "Montserrat"; }
 p { font-weight: 200; }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-weight: 600; }
 a { color: #0996b4; }
+a:hover { color: #FFF; text-decoration: none; }
 
-.mt5 { margin-top: 1rem !important; }
+.mt-5 { margin-top: 1rem !important; }
 .navbar-brand::after { display: none; }
 .nav-link { font-size: 22px; }
 .link-after, .nav-link::after, .navbar-brand::after, .nav-item.active::after { content: none; }
 .navbar-themed .navbar-nav .nav-link.active, .navbar-themed .navbar-nav .nav-link:hover { color: #0996b4; }
 #theme-toggler { display: none; }
 
-.post.card.border { border: none !important; }
+.post.card.border { border: none !important; background-color: #1c1d1e; }
+a.post.card.border:hover { background-color: #242526; }
 
-#attribution { writing-mode: initial; transform: none; position: inherit; }
+footer.py-3 { padding: 2rem 0 !important; background-color: #000; border-top: 1px solid #191919;  }
