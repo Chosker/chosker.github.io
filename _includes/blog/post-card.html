@@ -30,7 +30,7 @@
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
       <p class="card-meta">
-        {{ post.date | date_to_long_string }} / {%- assign words = post.content | number_of_words -%}
+        {{ post.date | date_to_long_string }} •  {%- assign words = post.content | number_of_words -%}
         {%- if words < 360 -%}
         < 1 min read
         {%- else -%}
