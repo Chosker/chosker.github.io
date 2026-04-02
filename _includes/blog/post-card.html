@@ -2,7 +2,6 @@
 {%- assign card_style  = '' -%}
 {%- assign text_style  = 'text-themed' -%}
 {%- assign badge_style = 'badge-dark' -%}
-{%- assign card_image  = page.path -%}
 
 {%- comment -%} Update Styles {%- endcomment -%}
 {%- if post.style == 'fill' -%}
@@ -25,6 +24,7 @@
 {%- else -%}
   {%- assign post_url = post.url | relative_url -%}
 {%- endif -%}
+{%- assign card_image  = post.url -%}
     
 <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
   <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
