@@ -39,15 +39,15 @@ footer.py-3 { padding: 2rem 0 !important; background: none; border: none; }
 
 
 
-@media (min-width: 1200px) {
-.navbar-expand-lg { max-width: 1140px; }
-}
-@media (min-width: 992px) {
-.navbar-expand-lg { max-width: 960px; }
+@media (min-width: 576px) {
+.navbar-nav .nav-link { text-align: right; }
 }
 @media (min-width: 768px) {
 .navbar-nav .nav-link { text-align: right; }
 }
-@media (min-width: 576px) {
-.navbar-nav .nav-link { text-align: right; }
+@media (min-width: 992px) {
+.navbar-expand-lg { max-width: 960px; }
+}
+@media (min-width: 1200px) {
+.navbar-expand-lg { max-width: 1140px; }
 }
