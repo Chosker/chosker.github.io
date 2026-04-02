@@ -20,7 +20,9 @@ p { font-weight: 200; }
 a { color: #0996b4; }
 a:hover { color: #FFF; text-decoration: none; }
 
-.mt-5 { margin-top: 1rem !important; }
+.mt-5 { margin-top: 0px !important; }
+.navbar { padding: 2.5rem 1rem; }
+.navbar-brand { margin-bottom: 0px; }
 .navbar-brand::after { display: none; }
 .nav-link { font-size: 22px; }
 .link-after, .nav-link::after, .navbar-brand::after, .nav-item.active::after { content: none; }
