@@ -14,7 +14,7 @@
 }
 
 body { font-family: "Montserrat"; }
-[data-theme="dark"] body { background-color: #090b0d; background-image: radial-gradient(circle farthest-corner at top, #1e2024, #000); }
+[data-theme="dark"] body { background-color: #000; background-image: radial-gradient(circle farthest-side at top, #1e2024, #000); background-repeat: no-repeat; }
 p { font-weight: 200; }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-weight: 600; }
 a { color: #0996b4; }
@@ -33,6 +33,7 @@ a:hover { color: #FFF; text-decoration: none; }
 
 .post.card.border { border: none !important; background-color: #1c1d1e; }
 a.post.card.border:hover { background-color: #242526; }
+.card.border .card-footer { border: 0px; }
 
 footer.py-3 { padding: 2rem 0 !important; background-color: #000; border-top: 1px solid #191919; }
 footer.py-3 { padding: 2rem 0 !important; background: none; border: none; }
