@@ -3,42 +3,6 @@
 @import "portfolYOU";
 
 @font-face {
-  font-family: 'Martel Sans';
-  src: url('/assets/fonts/MartelSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Martel Sans';
-  src: url('/assets/fonts/MartelSans-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Martel Sans';
-  src: url('/assets/fonts/MartelSans-ExtraBold.ttf') format('truetype');
-    font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Martel Sans';
-  src: url('/assets/fonts/MartelSans-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Martel Sans';
-  src: url('/assets/fonts/MartelSans-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Martel Sans';
-  src: url('/assets/fonts/MartelSans-ExtraLight.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Montserrat';
   src: url('/assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
   font-style: normal;
@@ -49,8 +13,9 @@
   font-style: italic;
 }
 
-body { font-family: "Montserrat"; font-weight: 100; }
+body { font-family: "Montserrat"; }
 [data-theme="dark"] body { background-color: #1f2225; }
+p { font-weight: 200; }
 .mt5 { margin-top: 1rem !important; }
 .navbar-brand::after { display: none; }
 .nav-link { font-size: 22px; }
