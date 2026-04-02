@@ -2,6 +2,7 @@
 {%- assign card_style  = '' -%}
 {%- assign text_style  = 'text-themed' -%}
 {%- assign badge_style = 'badge-dark' -%}
+{%- assign card_image  = post.name -%}
 
 {%- comment -%} Update Styles {%- endcomment -%}
 {%- if post.style == 'fill' -%}
@@ -27,7 +28,7 @@
     
 <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
   <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
-    <div class="card-image"><img src="../posts/{{ post.name }}.png"></div>
+    <div class="card-image"><img src="../posts/{{ card_image }}.png"></div>
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
       <p class="card-meta"><span>
