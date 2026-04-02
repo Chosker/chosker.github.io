@@ -1,9 +1,9 @@
 ---
-title: Editing the UE5 Shaders
+title: Editing the UE5 Engine Shaders
 tags: [UE5, Shaders]
 style: 
 color: 
-description: Quick guide to edit the engine shaders using the Launcher version of UE5.
+description: How to edit the engine shaders using the Launcher version of UE5, without recompiling the engine.
 ---
 
 Source: [Nikhil Thota](https://medium.com/@nikhilthota/digital-minimalism-ac083064b4e4)
