@@ -18,6 +18,9 @@
   {%- endif -%}
 {%- endif -%}
 
+{%- assign words = post.content | number_of_words -%}
+
+
 {%- comment -%} Determine Post URL {%- endcomment -%}
 {%- if post.external_url -%}
   {%- assign post_url = post.external_url -%}
@@ -31,12 +34,6 @@
       <h3 class="card-title">{{ post.title }}</h3>
       <p class="card-meta">
         {{ post.date | date_to_long_string }} / 
-        {%- assign words = post.content | number_of_words -%}
-        {%- if words < 360 -%}
-          < 1 min read
-        {%- else -%}
-          {{ words | divided_by: 180 }} mins read
-        {%- endif -%}
       </p>
       <p class="card-text">
         {%- if post.description -%}
