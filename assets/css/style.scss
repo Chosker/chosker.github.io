@@ -20,4 +20,7 @@ p { font-weight: 200; }
 .navbar-brand::after { display: none; }
 .nav-link { font-size: 22px; }
 #theme-toggler { display: none; }
+
+.post.card.border { border: none; }
+
 #attribution { writing-mode: initial; transform: none; position: inherit; }
