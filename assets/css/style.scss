@@ -22,7 +22,7 @@ a:hover { color: #FFF; text-decoration: none; }
 [data-theme="dark"] .text-themed { color: #FFF; }
 
 .nav-container { background-color: #000; border-bottom: 1px solid #191919; margin-bottom: 2rem; }
-.navbar { padding: 1.5rem 2rem; max-width: 1140px; margin-left: auto; margin-right: auto; }
+.navbar { padding: 1.5rem 2rem; margin-left: auto; margin-right: auto; }
 .navbar-brand { margin-bottom: 0px; }
 .navbar-brand::after { display: none; }
 .nav-link { font-size: 22px; }
@@ -39,6 +39,9 @@ footer.py-3 { padding: 2rem 0 !important; background: none; border: none; }
 
 
 
+@media (min-width: 1200px) {
+.navbar-expand-lg { max-width: 1140px; }
+}
 @media (min-width: 992px) {
 .navbar-expand-lg { max-width: 960px; }
 }
