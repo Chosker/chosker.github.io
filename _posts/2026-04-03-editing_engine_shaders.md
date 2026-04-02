@@ -1,16 +1,16 @@
 ---
-title: Digital Minimalism
-tags: [Social Media, Minimalism, Technology]
+title: Editing the UE5 Shaders
+tags: [UE5, Shaders]
 style: 
 color: 
-description: Minimalism is the art of knowing how much is just enough. Digital minimalism applies this idea to our personal technology. It’s the key to living a focused life in an increasingly noisy world.
+description: Quick guide to edit the engine shaders using the Launcher version of UE5.
 ---
 
 Source: [Nikhil Thota](https://medium.com/@nikhilthota/digital-minimalism-ac083064b4e4)
 
 A few months ago I was offered (and have since accepted) a full time offer to work at Facebook in San Francisco and in that time I have been reflecting on my own usage of social media and the amount of value it has added to my life.
 
-A common trend I’ve been seeing is the urgency to delete all your social media IMMEDIATELY or even go completely off-the-grid to avoid the unimaginable long-term implications of having your attention and personal data potentially manipulated and abused. I don’t think that we can thrive in today’s world without utilizing the platforms that allow us such a dense level of interconnectivity. I’m not saying that things couldn’t be engineered better; what I am saying however, is that we can take control of how these platforms influence us and in a sense, take control of our own evolution.
+A common trend I ’ve been seeing is the urgency to delete all your social media IMMEDIATELY or even go completely off-the-grid to avoid the unimaginable long-term implications of having your attention and personal data potentially manipulated and abused. I don’t think that we can thrive in today’s world without utilizing the platforms that allow us such a dense level of interconnectivity. I’m not saying that things couldn’t be engineered better; what I am saying however, is that we can take control of how these platforms influence us and in a sense, take control of our own evolution.
 
 Anyways, here are five things I’ve done which have allowed me to be a participant in the digital world, but not have my attention micromanaged:
 
