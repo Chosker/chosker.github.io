@@ -18,13 +18,6 @@
   {%- endif -%}
 {%- endif -%}
 
-{%- assign words = post.content | post.number_of_words -%}
-{%- if words < 360 -%}
-< 1 min read
-{%- else -%}
-{{ words | divided_by: 180 }} mins read
-{%- endif -%}
-
 {%- comment -%} Determine Post URL {%- endcomment -%}
 {%- if post.external_url -%}
   {%- assign post_url = post.external_url -%}
