@@ -40,7 +40,7 @@ a:hover { color: #FFF; text-decoration: none; }
 .card-image img { width: 100%; border-radius: 10px 10px 0 0; }
 .card-meta { font-size: 12px; font-weight: 100; }
 .card-meta span { margin-right: 5px; }
-.post.card.border { border: none !important; border-radius: 10px; background-color: #0f0f0f; }
+.post.card.border { border: 1px solid #1c1c1c !important; border-radius: 10px; background-color: #0f0f0f;  }
 a.post.card.border:hover { background-color: #242526; }
 a.post.card.border:hover img { filter: brightness(1.25); }
 .card.border .card-footer { border: 0px; }
