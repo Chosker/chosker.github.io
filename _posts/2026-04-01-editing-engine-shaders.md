@@ -1,6 +1,7 @@
 ---
 title: Editing the UE5 Engine Shaders
 tags: [UE5, Shaders]
+techs: [ue5, hlsl]
 style: 
 color: 
 description: How to edit the engine shaders using the Launcher version of UE5, without recompiling the engine.
