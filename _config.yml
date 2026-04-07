@@ -52,7 +52,7 @@ author:
 permalink: /blog/:title
 blog_settings:
   title: Fragments
-  content: frag·ment [ˈfraɡm(ə)nt]<br>a small part broken off or separated from something.
+  content: <i>frag·ment [ˈfragm(ə)nt]<br>a small part broken off or separated from something.</i>
 
 ### Collections ###
 collections:
