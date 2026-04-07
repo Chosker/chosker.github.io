@@ -1,6 +1,8 @@
 ---
 layout: page
 ---
+{%- assign post_image = post.path | replace: '_posts', 'posts' | replace: '.md', '.jpg' -%}
+<div class="post-image"><img src="../{{ card_image }}"></div>
 
 <h1>{{ page.title }}</h1>
 
