@@ -8,7 +8,7 @@ layout: page
 <div class="post-image"><img src="../{{ post_image }}"></div>
 
 <p class="post-metadata text-muted">
-  {{ page.date | date_to_long_string }} <span> • </span>  
+  {{ page.date | date_to_long_string: "ordinal", "US" }} <span> • </span>  
   {%- assign words = content | number_of_words -%}
   {%- if words < 360 -%}
     < 1 min read

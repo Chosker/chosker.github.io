@@ -37,7 +37,7 @@
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
       <p class="card-meta"><span>
-        {{ post.date | date_to_long_string }}
+        {{ post.date | date_to_long_string: "ordinal", "US" }}
       </span>
       <span> • </span>
       <span>
