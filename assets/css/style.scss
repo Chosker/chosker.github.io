@@ -42,7 +42,7 @@ a.post.card.border:hover .card-image img { filter: brightness(1.25); transform: 
 .card-icons { position: absolute; z-index: 1; margin: -8px; }
 .card-icons .card-icon { background: #000; padding: 4px !important; border-radius: 6px; }
 .card-image { margin-left: -15px; margin-right: -15px; margin-top: -15px; overflow: hidden; }
-.card-image img { width: 100%; border-radius: 10px 10px 0 0; transition: transform 0.15s ease; }
+.card-image img { width: 100%; transition: transform 0.15s ease; }
 .card-meta { font-size: 12px; font-weight: 100; }
 .card-meta span { margin-right: 5px; }
 .card.border .card-footer { border: 0px; }
