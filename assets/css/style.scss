@@ -36,9 +36,11 @@ a:hover { color: #FFF; text-decoration: none; }
 .mt-5 { margin-top: 0px !important; }
 .container .content { padding: 0 15px; }
 
-.post.card.border { border: 1px solid #1c1c1c !important; border-radius: 10px; background-color: #0f0f0f; overflow: hidden; }
+.post.card.border { border: 1px solid #1c1c1c !important; border-radius: 8px; background-color: #0f0f0f; overflow: hidden; }
 a.post.card.border:hover { background-color: #242526; }
-a.post.card.border:hover img { filter: brightness(1.25); transform: scale(1.05); }
+a.post.card.border:hover .card-image img { filter: brightness(1.25); transform: scale(1.05); }
+.card-icons { position: absolute; z-index: 1; margin: -8px; }
+.card-icons .card-icon { background: #000; padding: 4px !important; border-radius: 6px; }
 .card-image { margin-left: -15px; margin-right: -15px; margin-top: -15px;  }
 .card-image img { width: 100%; border-radius: 10px 10px 0 0; transition: transform 0.15s ease; }
 .card-meta { font-size: 12px; font-weight: 100; }
