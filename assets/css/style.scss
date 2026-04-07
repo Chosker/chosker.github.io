@@ -60,7 +60,7 @@ footer.py-3 { padding: 2rem 0 !important; background: none; border: none; }
 footer a { color: #999; }
 
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .navbar-brand { width: calc(100% - 60px); }
   .navbar-brand img { width: 100%; }
 }
