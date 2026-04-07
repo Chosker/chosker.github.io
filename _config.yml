@@ -52,7 +52,8 @@ author:
 permalink: /blog/:title
 blog_settings:
   title: Fragments
-  content: The cool stuff is shown here
+  content: frag·ment [ˈfraɡm(ə)nt]
+a small part broken off or separated from something.
 
 ### Collections ###
 collections:
