@@ -16,8 +16,8 @@ layout: page
     {{ words | divided_by: 180 }} min read
   {%- endif -%}
 
-  <br>
-
+</p>
+<p class="post-tags">
   {%- if page.tags != empty -%}
     {% for tag in page.tags %}
     <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">
