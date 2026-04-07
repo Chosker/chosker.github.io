@@ -49,8 +49,8 @@ a.post.card.border:hover .card-image img { filter: brightness(1.25); transform: 
 
 .post-image img { border-radius: 8px; }
 .post-metadata { font-size: 15px; margin-top: 0px; }
-.post-metadata:hover { background-color: #242526; }
-.post-metadata .badge { font-size: 85%; background-color: #0f0f0f; padding: 8px; border-radius: 6px; border-color: #1c1c1c !important; }
+.post-tags:hover { background-color: #242526; }
+.post-tags .badge { font-size: 85%; background-color: #0f0f0f; padding: 8px; border-radius: 6px; border-color: #1c1c1c !important; }
 
 footer.py-3 { padding: 2rem 0 !important; background-color: #000; border-top: 1px solid #191919; }
 footer.py-3 { padding: 2rem 0 !important; background: none; border: none; }
