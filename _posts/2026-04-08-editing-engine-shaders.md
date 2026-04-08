@@ -33,7 +33,7 @@ Right before that I'm adding a new line with the following:
 ```hlsl
 	OutColor.gb = 0.0f;
 ```
-This simply zero-outs the green and blue components of any light's color, turning it red. The result:
+This simply zero-outs the green and blue components of any light's color, turning it red. The result before/after:
 {% capture carousel_images %}
 ../posts/2026-04-08-editing-engine-shaders_01.jpg
 ../posts/2026-04-08-editing-engine-shaders_02.jpg
