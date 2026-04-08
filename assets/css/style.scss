@@ -14,11 +14,12 @@
 }
 
 html { padding: 0px; }
-body { font-family: "Montserrat"; }
+body { font-family: "Montserrat"; line-height: 1.75; }
 [data-theme="dark"] body { background-color: #000; background-image: radial-gradient(circle farthest-side at top, #1e2024, #000); background-repeat: no-repeat; }
 p { font-size: 15px; font-weight: 300; text-align: justify; }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-weight: 700; color: #FFF; }
 .h1, h1 { font-size: 3rem; }
+.markdown-body h1, .markdown-body h2 { margin-top: 42px; }
 .h2 { font-size: 2.5rem; }
 .h3 { font-size: 2rem; }
 .text-muted { color: #9c9c9c!important; }
@@ -39,6 +40,7 @@ a:hover, .markdown-body a:not(.btn):not([class^="carousel-"]):not([class^="list-
 .navbar-themed .navbar-nav .nav-link.active, .navbar-themed .navbar-nav .nav-link:hover { color: #fff; }
 #theme-toggler { display: none; }
 .mt-5 { margin-top: 0px !important; }
+.container.mt-5 { margin-bottom: 60px; }
 .container .content { padding: 0 15px; }
 
 .post.card.border { border: 1px solid #1c1c1c !important; border-radius: 8px; background-color: #0f0f0f; overflow: hidden; }
@@ -55,7 +57,7 @@ a.post.card.border:hover .card-image img { filter: brightness(1.25); transform: 
 .post-image img { border-radius: 8px; }
 .post-metadata { font-size: 15px; margin-top: 0px; }
 .post-metadata span { margin-left: 5px; margin-right: 5px; }
-.post-tags { margin-bottom: 3rem; }
+.post-tags { margin-bottom: 2rem; }
 .post-tags .badge { font-size: 85%; color: #9c9c9c!important; background-color: #0f0f0f; padding: 8px 16px; border-radius: 6px; border-color: #1c1c1c !important; }
 .post-tags .badge:hover { background-color: #242526; color: #ccc !important; }
 
