@@ -29,7 +29,7 @@ At line 401 (in UE 5.7), you'll find the following code:
 ```hlsl
 	// RGB:SceneColor Specular and Diffuse
 ```
-Right before that line I'm adding the following:
+Right before that I'm adding a new line with the following:
 ```hlsl
 	OutColor.gb = 0.0f;
 ```
