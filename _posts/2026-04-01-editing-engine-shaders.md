@@ -7,9 +7,9 @@ color:
 description: How to edit the engine shaders using the Launcher version of UE5, without recompiling the engine.
 ---
 
-Sometimes it's interesting to make edits to Unreal's rendering at the engine side, be it for tweaking some specific behavior, fixing small bugs or even adding extra functionality. Thankfully the engine shader files can be edited and recompiled, allowing many such changes possible for those like me, that stick to strictly the launcher version of Unreal.
+Sometimes it's interesting to make edits to Unreal's rendering at the engine side, be it for tweaking some specific behavior, fixing small bugs or even adding extra functionality. Thankfully the engine shader files can be edited and recompiled **without recompiling the engine itself** allowing many such changes for those like me that stick to strictly the **launcher version of Unreal**.
 
-Over the years and different projects I've made edits to shaders such as Shadows, Lumen Lighting, Lumen Reflections, TAA, SSR, Motion Blur, Skylight, and even a bit of NPR rendering on the Base Pass - all without the need to recompile the engine.
+Over the years on different projects I've made edits to shaders such as Shadows, Lumen Lighting, Lumen Reflections, TAA, SSR, Motion Blur, Skylight, and even a bit of NPR rendering on the Base Pass - all without the need to recompile the engine.
 
 The first challenge is figuring out where the engine does the exact thing you want to edit, which will take some exploring and some trial and error. I usually try editing outputs to some obvious values such as setting the color to red - this way I can quickly see if I'm editing the right thing.
 
@@ -39,8 +39,8 @@ This simply zero-outs the green and blue components of any light's color, turnin
 ../posts/2026-04-01-editing-engine-shaders_02.jpg
 {% endcapture %}
 {% include elements/carousel.html %}
-Of course this is a silly change and it's only serving as an example.
+Of course this is a silly change and it's only serving as an example. Why would you want your lights to be red?
 
 ## Maintaining the changes
-You should be aware that any 
+You should be aware that any engine shader changes {% include elements/highlight.html text="will be lost" %} when updating the engine to newer versions from the Launcher, so you should be mindful to 
 
