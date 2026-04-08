@@ -16,14 +16,14 @@
 html { padding: 0px; }
 body { font-family: "Montserrat"; }
 [data-theme="dark"] body { background-color: #000; background-image: radial-gradient(circle farthest-side at top, #1e2024, #000); background-repeat: no-repeat; }
-p { font-size: 15px; font-weight: 200; text-align: justify; }
+p { font-size: 15px; font-weight: 300; text-align: justify; }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-weight: 700; color: #FFF; }
 .h1, h1 { font-size: 3rem; }
 .h2 { font-size: 2.5rem; }
 .h3 { font-size: 2rem; }
 .text-muted { color: #9c9c9c!important; }
 .markdown-body code.highlighter-rouge { padding: 0.2em 0.4em; font-size: 100%; border-radius: 5px; }
-.highlighter-rouge.highlight { background: #0f0f0f; border: 1px solid #1c1c1c; }
+.highlighter-rouge pre.highlight { background: #0f0f0f; border: 1px solid #1c1c1c; }
 
 a { color: #0782ab; transition: color 0.2s; font-weight: 500; }
 a:hover, .markdown-body a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline):hover { color: #fff; text-decoration: none; }
