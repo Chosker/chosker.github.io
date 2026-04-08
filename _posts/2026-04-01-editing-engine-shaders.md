@@ -44,6 +44,7 @@ I'll be showing some more interesting engine shader changes sometime in the futu
 
 ## Maintaining the changes
 You should be aware that any engine shader changes **will be lost** when updating the engine from the Launcher, so you should be mindful to keep track of your engine changes to be able to re-apply them later.
+
 If you use source control a simple way to keep track is to copy the un-edited shader files to a folder in your game repository and make subsequent pushes with the edits in order to easily see the commit diffs. If you work with multiple people this also makes it easier for everyone to isolate the changes apply the changes locally. It's not the most sophisticated method but it's simple and it works.
 
 Also keep in mind that making a build of the game will need the build machine to have the engine changes applied as well.
