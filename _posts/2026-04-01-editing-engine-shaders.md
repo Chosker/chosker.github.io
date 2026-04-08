@@ -40,6 +40,7 @@ This simply zero-outs the green and blue components of any light's color, turnin
 {% endcapture %}
 {% include elements/carousel.html %}
 Of course this is a silly change and it's only serving as an example. Why would you want your lights to be red?
+I'll be showing some more interesting engine shader changes sometime in the future.
 
 ## Maintaining the changes
 You should be aware that any engine shader changes **will be lost** when updating the engine from the Launcher, so you should be mindful to keep track of your engine changes to be able to re-apply them later.
