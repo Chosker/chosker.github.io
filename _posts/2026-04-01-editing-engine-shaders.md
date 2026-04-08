@@ -22,14 +22,14 @@ When editing the engine shaders it's always recommended to set `r.ShaderDevelopm
 
 Shaders can be edited with Unreal running. After modifying and saving any shader file simply switch back to Unreal and press `Ctrl` + `Shift` + `.` to trigger recompiling any changed shaders. This might take anything from a few seconds to several minutes depending on the shader that was changed.
 
-## Example change
+## Example
 
 As a very simple example I'll be editing the `DeferredLightingPixelShaders.usf` file.
 At line 401 (in UE 5.7), you'll find the following code:
 ```hlsl
 	// RGB:SceneColor Specular and Diffuse
 ```
-Right before that I'm adding the following:
+Right before that line I'm adding the following:
 ```hlsl
 	OutColor.gb = 0.0f;
 ```
