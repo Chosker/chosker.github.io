@@ -9,14 +9,14 @@ description: How to edit the engine shaders using the Launcher version of UE5, w
 
 Sometimes it's interesting to make edits to Unreal's rendering at the engine side, be it for tweaking some specific behavior, fixing small bugs or even adding extra functionality. Thankfully the engine shader files can be edited and recompiled **without recompiling the engine itself** allowing many such changes for those like me that stick to strictly the **launcher version of Unreal**.
 
-Over the years on different projects I've made edits to shaders such as **Shadows, Lumen Lighting, Lumen Reflections, TAA, SSR, Motion Blur, Skylight,** and even a bit of **NPR rendering on the Base Pass** - all without the need to recompile the engine.
+Over the years I've made edits to shaders such as **Shadows, Lumen Lighting / Reflections, TAA, SSR, Motion Blur, Skylight,** and even a bit of **NPR rendering on the Base Pass** - all without the need to recompile the engine.
 
 ## Making changes to the Shader files
 
-The first challenge is figuring out where the engine does the exact thing you want to change, which will take some exploring and some trial and error. The shader files can be found in your Unreal installation folder within the `Engine/Shaders/Private/` folder and can be opened with any text editor.
+The shader files can be found in your Unreal installation folder within the `Engine/Shaders/Private/` folder and can be opened with any text editor.
 If you're already using Visual Studio on a C++ project the setup is even better as you will already have the shader files in the Solution within the filters at `Engine/UE5/Shaders/Private/`.
 
-Once you know what you want to edit it's a matter of opening the corresponding shader file and modifying it. I usually try editing outputs to some obvious values such as setting the color to red - this way I can quickly see if I'm editing the right thing.
+The first challenge is figuring out where the engine does the exact thing you want to change, which will take some exploring and some trial and error. I usually try editing outputs to some obvious values such as setting the color to red - this way I can quickly see if I'm editing the right thing.
 
 When editing the engine shaders it's always recommended to set `r.ShaderDevelopmentMode` to `1` as described in the [Unreal Documentation](https://dev.epicgames.com/documentation/unreal-engine/shader-development?application_version=4.27#quickstart). Without it any error in the shader code will cause the engine to crash.
 
@@ -39,13 +39,13 @@ This simply zero-outs the green and blue components of any light's color, turnin
 ../posts/2026-04-01-editing-engine-shaders_02.jpg
 {% endcapture %}
 {% include elements/carousel.html %}
-Of course this is a silly change and it's only serving as an example. Why would you want your lights to be red?
+Of course this is a silly change. Why would you want your lights to be red?
 
 I'll be showing some more interesting engine shader changes sometime in the future.
 
 ## Maintaining the changes
 You should be aware that any engine shader changes **will be lost** when updating the engine from the Launcher, so you should be mindful to keep track of your engine changes to be able to re-apply them later.
 
-If you use source control a simple way to keep track is to copy the un-edited shader files to a folder in your game repository and make subsequent pushes with the edits in order to easily see the commit diffs. If you work with multiple people this also makes it easier for everyone to isolate the changes apply the changes locally. It's not the most sophisticated method but it's simple and it works.
+If you use source control a simple way to keep track is to copy the un-edited shader files to a folder in your game repository and make subsequent pushes with the edits in order to easily see the commit diffs. If you work with multiple people this also makes it easier for everyone to see the changes and apply them locally. It's not the most sophisticated method but it's simple and it works.
 
 Also keep in mind that making a build of the game will need the build machine to have the engine shader changes applied as well.
