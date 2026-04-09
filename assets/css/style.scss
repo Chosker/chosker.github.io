@@ -47,7 +47,7 @@ a:hover, .markdown-body a:not(.btn):not([class^="carousel-"]):not([class^="list-
 
 .my-2 #dummy { padding-top: 0; }
 .my-2 #element { position: inherit; display: inline-block; }
-.circle-image { width: auto; height: auto; border-radius: 0; margin-bottom: 50px; }
+.circle-image { width: auto; height: auto; border-radius: 0; margin-bottom: 50px !important; }
 
 .post.card.border { border: 1px solid #1c1c1c !important; border-radius: 8px; background-color: #0f0f0f; overflow: hidden; }
 a.post.card.border:hover { background-color: #242526; }
