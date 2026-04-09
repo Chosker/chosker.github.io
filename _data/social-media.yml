@@ -105,3 +105,8 @@ keybase:
   url   : https://www.keybase.io/
   icon  : fab fa-keybase
   color : 66ccff
+
+rss:
+  url   : 
+  icon  : fab fa-rss
+  color : 909090
