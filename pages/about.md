@@ -5,6 +5,6 @@ permalink: /about/
 weight: 1
 ---
 
-![Tech Art Fragments](logo.png "Tech Art Fragments")
+![Tech Art Fragments](../logo.png "Tech Art Fragments")
 
-Hi! I'm Oscar Sanz aka. Chosker. This blog is dedicated to Tech Art tips and insights (<i>knowledge fragments</i>), focused on short, quick and useful snippets and obscure or lesser-known functionalities.
+Hi! I'm **Chosker** aka Oscar Sanz. This blog is dedicated to Tech Art tips and insights (<i>knowledge fragments</i>), focused on short, quick and useful snippets and obscure or lesser-known functionalities.
