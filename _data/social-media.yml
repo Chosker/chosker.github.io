@@ -1,6 +1,11 @@
 # Get Icons  from : https://fontawesome.com/icons
 # Get Colors from : https://brandcolors.net/
 
+artstation:
+  url   : http://www.artstation.com/
+  icon  : fab fa-artstation
+  color : 13aff0
+
 behance:
   url   : https://www.behance.net/
   icon  : fab fa-behance
