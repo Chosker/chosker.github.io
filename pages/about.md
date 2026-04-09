@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About - Tech Art Fragments
 permalink: /about/
 weight: 1
 ---
