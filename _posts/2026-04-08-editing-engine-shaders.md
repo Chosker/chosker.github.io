@@ -7,7 +7,7 @@ color:
 description: How to edit the engine shaders using the Launcher version of UE5, without recompiling the engine.
 ---
 
-Sometimes it's interesting to make edits to Unreal's rendering at the engine side, be it for tweaking some specific behavior, fixing small bugs or even adding extra functionality. Thankfully the engine shader files can be edited and recompiled **without recompiling the engine itself** allowing many such changes for those like me that stick to strictly the **launcher version of Unreal**.
+Sometimes it's interesting to make edits to Unreal's rendering at the engine side, be it for tweaking some specific behavior, fixing small bugs or even adding extra functionality. Thankfully the engine shader files can be edited and recompiled **without recompiling the engine itself** allowing many such changes for those like me that stick strictly to the **launcher version of Unreal**.
 
 Over the years I've made edits to shaders such as **Shadows, Lumen Lighting / Reflections, TAA, SSR, Motion Blur, Skylight,** and even a bit of **NPR rendering on the Base Pass** - all without the need to recompile the engine.
 
