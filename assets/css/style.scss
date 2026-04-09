@@ -45,6 +45,8 @@ a:hover, .markdown-body a:not(.btn):not([class^="carousel-"]):not([class^="list-
 .container.mt-5 { margin-bottom: 60px; }
 .container .content { padding: 0 15px; }
 
+.circle-image { width: auto; height: auto; border-radius: 0; }
+
 .post.card.border { border: 1px solid #1c1c1c !important; border-radius: 8px; background-color: #0f0f0f; overflow: hidden; }
 a.post.card.border:hover { background-color: #242526; }
 a.post.card.border:hover .card-image img { filter: brightness(1.25); transform: scale(1.05); }
