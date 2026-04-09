@@ -41,7 +41,7 @@
 
         {%- if page.url == html_page.url -%}
           {%- assign active_status = "active" -%}
-        {%- elsif page.title == "Blog" and html_page.url contains page.url + "/blog/" -%}
+        {%- elsif page.title == "Blog" and page.url contains html_page.url + "/blog/" -%}
           {%- assign active_status = "active" -%}
         {%- else -%}
           {%- assign active_status = "" -%}
