@@ -38,7 +38,7 @@ This simply zero-outs the green and blue components of any light's color, turnin
 ../posts/2026-04-08-editing-engine-shaders_01.jpg
 ../posts/2026-04-08-editing-engine-shaders_02.jpg
 {% endcapture %}
-{% include elements/carousel.html %}
+{% include elements/carousel.html duration="5" %}
 Of course this is a silly change, why would you want all lights to be red? Well I'll be showing some more interesting engine shader changes sometime in the future.
 
 ## Maintaining the changes
