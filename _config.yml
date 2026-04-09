@@ -50,7 +50,7 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
+permalink: /:title
 blog_settings:
   title: Fragments
   content: <i>Quick tips and insights focused on useful snippets and obscure or lesser-known functionalities.</i>
