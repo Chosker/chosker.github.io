@@ -53,7 +53,7 @@ author:
 permalink: /blog/:title
 blog_settings:
   title: Fragments
-  content: <i>frag·ment [ˈfragm(ə)nt]<br>a small part broken off or separated from something.</i>
+  content: <i>Quick tips and insights focused on useful snippets and obscure or lesser-known functionalities.</i>
 
 ### Collections ###
 collections:
