@@ -1,12 +1,12 @@
 ---
 layout: page
-title: About - Tech Art Fragments
+title: About
 permalink: /about/
 weight: 1
 ---
 
 <div class="p-4">
-  <div class="p-4">
+  <div class="row justify-content-center">
     <div class="col-md-6">
       <img src="../logo.png" alt="Tech Art Fragments" class="wow zoomIn animated">
 
