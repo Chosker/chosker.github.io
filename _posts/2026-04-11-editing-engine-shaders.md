@@ -35,8 +35,8 @@ Right before that I'm adding a new line with the following:
 ```
 This simply zero-outs the green and blue components of any light's color, turning it red. The result before/after:
 {% capture carousel_images %}
-../posts/2026-04-08-editing-engine-shaders_01.jpg
-../posts/2026-04-08-editing-engine-shaders_02.jpg
+../posts/2026-04-11-editing-engine-shaders_01.jpg
+../posts/2026-04-11-editing-engine-shaders_02.jpg
 {% endcapture %}
 {% include elements/carousel.html %}
 Of course this is a silly change, why would you want all lights to be red? Well I'll be showing some more interesting engine shader changes sometime in the future.
