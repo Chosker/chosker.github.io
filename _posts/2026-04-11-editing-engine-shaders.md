@@ -47,3 +47,6 @@ You should be aware that any engine shader changes **will be lost** when updatin
 If you use source control a simple way to keep track is to copy the un-edited shader files to a folder in your game repository and make subsequent pushes with the edits in order to easily see the commit diffs. If you work with multiple people this also makes it easier for everyone to see the changes and apply them locally. It's not the most sophisticated method but it's simple and it works.
 
 Also keep in mind that making a build of the game will need the build machine to have the engine shader changes applied as well.
+
+## Comments?
+If you have any comments or questions feel free to reply to the relevant [Twitter post](https://x.com/ChoskerSanz/status/2042961044788715800), [Bluesky post](https://bsky.app/profile/chosker.bsky.social/post/3mj7xmvxdak2s), [ArtStation post](https://www.artstation.com/artwork/P6AnJZ) or [LinkedIn post](https://www.linkedin.com/posts/oscarsanz_hey-all-im-starting-a-new-blog-on-tech-share-7448727721473368064-bgfF).
