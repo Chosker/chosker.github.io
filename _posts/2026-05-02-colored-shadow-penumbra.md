@@ -36,7 +36,6 @@ and right after that add the following:
 			float3 LuminanceFactors = float3(0.3f, 0.59f, 0.11f); // Luminance factor for desaturation
 			float3 PenumbraColor = dot(DiffuseLuminance, LuminanceFactors); // Desaturate
 			PenumbraColor = lerp(PenumbraColor, DiffuseLuminance, PenumbraSaturation); // Apply saturation (inverse desaturation)
-			PenumbraColor = saturate(PenumbraColor); // clamp to avoid artifacts
 			DiffuseLuminance = lerp(DiffuseLuminance, PenumbraColor, 1.0f - BSDFShadowTerms.SurfaceShadow); // Blend
 			// Colored shadow penumbra - End
 ```
@@ -55,7 +54,6 @@ and right after that add the following:
 		float3 LuminanceFactors = float3(0.3f, 0.59f, 0.11f); // Luminance factor for desaturation
 		float3 PenumbraColor = dot(OutColor.xyz, LuminanceFactors); // Desaturate
 		PenumbraColor = lerp(PenumbraColor, OutColor.xyz, PenumbraSaturation); // Apply saturation (inverse desaturation)
-		PenumbraColor = saturate(PenumbraColor); // clamp to avoid artifacts
 		OutColor.xyz = lerp(OutColor.xyz, PenumbraColor, 1.0f - SurfaceShadow); // Blend
 		// Colored shadow penumbra - End
 ```
