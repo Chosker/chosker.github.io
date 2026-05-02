@@ -14,8 +14,8 @@ There's different ways to go about an implementation and I've decided to edit th
 + It's easy, no need to guess which values correspond to light or shadow (as you would with a PostProcess solution) which can be painful with Lumen or day/night cycles
 + Works with all light types
 + The implementation is extremely cheap
-- It needs wide penumbras for the effect to be visible
 - The color saturation is only configurable across the board (not per light or per scene)
+- It needs wide penumbras for the effect to be visible
 - The implementation is only for Dynamic Lights, not Baked
 
 We're only editing the engine shaders but not the engine itself so we can stick to the Launcher version, as I've gone more in detail in my previous post about [Editing the Engine Shaders](https://chosker.github.io/blog/editing-engine-shaders) so make sure you read it to understand what that entails.
