@@ -40,7 +40,7 @@ and right after that add the following:
 			// Colored shadow penumbra - End
 ```
 
-
+<br>
 
 **If you're not using Substrate** open the `Engine\Shaders\Private\DeferredLightPixelShaders.usf` file:
 At line 397 (in UE 5.7) find the following code:
