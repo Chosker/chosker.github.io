@@ -70,7 +70,7 @@ Here's some comparison shots with and without colored penumbra, shown on a coupl
 ../posts/2026-05-02-colored-shadow-penumbra_02.jpg
 {% endcapture %}
 {% include elements/carousel.html %}
-{% capture carousel_images_2 %}
+{% capture carousel_images %}
 ../posts/2026-05-02-colored-shadow-penumbra_03.jpg
 ../posts/2026-05-02-colored-shadow-penumbra_04.jpg
 {% endcapture %}
