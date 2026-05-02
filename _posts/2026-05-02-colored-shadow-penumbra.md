@@ -23,6 +23,7 @@ We're only editing the engine shaders but not the engine itself so we can stick 
 ## Implementation
 
 **If you're using Substrate** edit the `Engine\Shaders\Private\Substrate\SubstrateDeferredLighting.ush` file:
+
 At line 190 (in UE 5.7) find the following code:
 ```hlsl
 			float3 SpecularLuminance = BSDFEvaluate.IntegratedSpecularValue * LightData.SpecularScale;
@@ -41,6 +42,7 @@ and right after that add the following:
 ```
 
 **If you're not using Substrate** edit the `Engine\Shaders\Private\DeferredLightPixelShaders.usf` file:
+
 At line 397 (in UE 5.7) find the following code:
 ```hlsl
 		OutColor += Radiance;
