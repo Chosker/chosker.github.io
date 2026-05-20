@@ -1,5 +1,5 @@
 {%- assign images = carousel_images | strip | newline_to_br | split: '<br />' -%}
-{%- assign carousel_id = "carouselExampleIndicators" -%}
+{%- assign carousel_id = carousel_name -%}
 
 <div id="{{ carousel_id }}" class="carousel slide" data-ride="carousel">
 
