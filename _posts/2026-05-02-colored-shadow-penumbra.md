@@ -70,13 +70,13 @@ Here's some comparison shots with and without colored penumbra, shown on a coupl
 ../posts/2026-05-02-colored-shadow-penumbra_01.jpg
 ../posts/2026-05-02-colored-shadow-penumbra_02.jpg
 {% endcapture %}
-{% capture carousel_name %} comparison_1 {% endcapture %}
+{% capture carousel_name %}comparison_1{% endcapture %}
 {% include elements/carousel.html %}
 {% capture carousel_images %}
 ../posts/2026-05-02-colored-shadow-penumbra_03.jpg
 ../posts/2026-05-02-colored-shadow-penumbra_04.jpg
 {% endcapture %}
-{% capture carousel_name %} comparison_2 {% endcapture %}
+{% capture carousel_name %}comparison_2{% endcapture %}
 {% include elements/carousel.html %}
 
 The effect is quite strong in these comparison shots for display purposes, and you'll probably want to configure the PenumbraSaturation value to be lower.
