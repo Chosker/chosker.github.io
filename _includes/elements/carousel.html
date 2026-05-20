@@ -1,7 +1,7 @@
 {%- assign images = carousel_images | strip | newline_to_br | split: '<br />' -%}
 {%- assign carousel_id = "carouselExampleIndicators" -%}
 
-<div id="{{ carousel_id }}"" class="carousel slide" data-ride="carousel">
+<div id="{{ carousel_id }}" class="carousel slide" data-ride="carousel">
 
   <ol class="carousel-indicators">
     {% for image in images %}
