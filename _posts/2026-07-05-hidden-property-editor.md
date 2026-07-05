@@ -12,6 +12,7 @@ Sometimes when editing assets in UE5 some needed properties are not exposed. A g
 
 Some time ago I found an obscure option on the **Details View** Widget called **'Force Hidden Property Visibility'** which as per its tooltip:
 > If true, all properties will be visible, not just those with CPF_Edit
+
 So we'll need to build a small tool around it.
 
 ## How to build it
@@ -24,8 +25,9 @@ Here's how I built a very simple **Hidden Property Editor** tool:
 4. In the Widget Blueprint's Graph View create a variable of type **Object > Object Reference** and name it "Asset"
 5. In the graph's PreConstruct Event add somre more nodes as follows:
 ![Blueprint setup](../posts/2026-07-05-bp_graph.jpg)
-6. Now run the Widget and select the asset. Now edit everything you ever need :)
+6. Now run the Widget and select the asset
 ![Blueprint setup](../posts/2026-07-05-hiddenpropertyeditor.jpg)
+Now you can edit everything you ever need :)
 
 ## Or if you're not too inclined...
 
