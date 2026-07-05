@@ -37,4 +37,4 @@ Building this Blueprint is dead simple but maybe you can't be bothered. Sure, I 
 Here's the [UAsset file](../posts/EUW_HiddenPropertyEditor.uasset) for UE 5.8. It's self-contained so just drop it anywhere and run it. That's it.
 
 ## Comments?
-If you have any comments or questions feel free to reply to the relevant [Twitter post](https://x.com/ChoskerSanz/status/2073863088999125048), [Bluesky post](https://bsky.app/profile/chosker.bsky.social/post/3mpwfbb32wk2s), or [LinkedIn post](https://www.linkedin.com/posts/oscarsanz_techart-ue5-share-7479628809164488704-bghu/).
+If you have any comments or questions feel free to reply to the relevant [Twitter post](https://x.com/ChoskerSanz/status/2073863088999125048), [Bluesky post](https://bsky.app/profile/chosker.bsky.social/post/3mpwfbb32wk2s), [ArtStation post](https://www.artstation.com/artwork/G1XOEN) or [LinkedIn post](https://www.linkedin.com/posts/oscarsanz_techart-ue5-share-7479628809164488704-bghu/).
