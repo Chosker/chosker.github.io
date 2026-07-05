@@ -4,7 +4,7 @@ tags: [UE5, Editor]
 techs: [ue5, bp]
 style: 
 color: 
-description: Hidden Property Editor in UE5
+description: How to edit all Assets' hidden properties in UE5
 ---
 
 Sometimes when editing assets in UE5 some needed properties are not exposed. A glaring example is how the **Clear Color** property is exposed for _RenderTarget2D_ but not for _RenderTargetCube_ or _RenderTargetVolume_, defaulting to that very well known bright green that might show up when you least expect it.
