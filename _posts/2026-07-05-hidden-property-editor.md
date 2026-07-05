@@ -7,7 +7,7 @@ color:
 description: Hidden Property Editor in UE5
 ---
 
-Sometimes when editing assets in UE5 some needed properties are not exposed. A glaring example is how the Clear Color is exposed for RenderTarget2D but not for RenderTargetCube or RenderTargetVolume, defaulting to that very well known bright green that might show up when you least expect it.
+Sometimes when editing assets in UE5 some needed properties are not exposed. A glaring example is how the **Clear Color** property is exposed for _RenderTarget2D_ but not for _RenderTargetCube_ or _RenderTargetVolume_, defaulting to that very well known bright green that might show up when you least expect it.
 ![Clear Color not exposed on RenderTargetCube or RenderTargetVolume](../posts/2026-07-05-missing_property.jpg)
 
 Some time ago I found an obscure option on the **Details View** Widget called **'Force Hidden Property Visibility'** which as per its tooltip:
@@ -27,6 +27,7 @@ Here's how I built a very simple **Hidden Property Editor** tool:
 ![Blueprint setup](../posts/2026-07-05-bp_graph.jpg)
 6. Now run the Widget and select the asset
 ![Blueprint setup](../posts/2026-07-05-hiddenpropertyeditor.jpg)
+
 Now you can edit everything you ever need :)
 
 ## Or if you're not too inclined...
