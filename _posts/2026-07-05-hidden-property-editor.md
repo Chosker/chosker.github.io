@@ -1,5 +1,5 @@
 ---
-title: Colored Shadow Penumbra
+title: Hidden Property Editor
 tags: [UE5, Editor]
 techs: [ue5, bp]
 style: 
