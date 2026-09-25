@@ -110,3 +110,8 @@ rss:
   url   : 
   icon  : fas fa-rss
   color : 909090
+
+linktree:
+  url   : 
+  icon  : fab fa-linktree
+  color : 45e55f
