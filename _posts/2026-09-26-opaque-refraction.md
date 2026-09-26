@@ -21,19 +21,21 @@ First we need a StaticMeshActor with **'Affect Distance Field Lighting' disabled
 I've made a few attempts to work around this limitation but I've had no luck so far so I figured it's a challenge for another day.
 Fortunately with Lumen HWRT this limitation does not apply.
 
-Then we need an Opaque Material with 'Tangent Space Normal' disabled.
+Then we need an Opaque Material with **'Tangent Space Normal' disabled**.
 
 ## Fixing SSR for Refraction-like Reflections
 
 The first limitation in the attempts I'd seen was SSR's artifacts. SSR is designed for reflections and it bugs out when the reflection vector points inwards instead of outwards from the surface.
 
-By now you'll have noticed I'm targeting Lumen here. I'm pretty sure this could be applied to non-Lumen SSR but that's beyond the scope of this post :)
+By now you'll have noticed I'm targeting Lumen here. I'm pretty sure this could be applied to non-Lumen SSR coupled with Reflection Captures but that's beyond the scope of this post :)
 
 If we try anything interesting with the Normals the SSR bugs out. For example here's what happens if I multiply the VertexNormal with -1 to invert the value:
 ![Simple setup](../posts/2026-09-26-01-badssr.jpg)
 
 Disabling Lumen's Reflections Screen Traces _would_ fix it, but that would be an unacceptable compromise.
 So we need to alter Lumen's SSR behavior, and there's 2 ways to do it:
+
+<br>
 
 #### Option 1: HistoryDepthTestRelativeThickness cvar
 Lumen has this `r.Lumen.Reflections.HierarchicalScreenTraces.HistoryDepthTestRelativeThickness` cvar which defaults to `0.005` that helps sampling depth for Lumen's SSR more accurately. Setting it to `0.0` changes its behavior in a way that gives us what we need: SSR hits that go inwards will now be skipped.
@@ -47,10 +49,12 @@ Here's the default behavior vs the edited cvar:
 {% capture carousel_name %}comparison_1{% endcapture %}
 {% include elements/carousel.html %}
 
+<br>
 
 #### Option 2: Engine Shader Edit
 
 With a quick edit to the Engine Shaders we can get the behavior we need without degrading the reflections. As we're only editing the engine Shaders (but not the code) we only need to edit a text file as I've shown before in my post about [Editing the Engine Shaders](https://chosker.github.io/blog/editing-engine-shaders).
+
 We need to edit the `Engine\Shaders\Private\Lumen\LumenReflectionTracing.usf` file. As of UE 5.8 in line 191 you'll find the following code:
 ```hlsl
 bHit = abs(HistoryDeviceZ - PrevDeviceZ) < HistoryDepthTestRelativeThickness * lerp(.5f, 2.0f, Noise);
@@ -90,14 +94,14 @@ With the SSR artifacts out of the way it's time to build the material. There's d
 ![Fixed SSR](../posts/2026-09-25-05-refractmaterial.jpg)
 Section 1 is the Refraction Vector. Simple and cheap, and it very closely matches the behavior of Ray Tracing Refraction.
 
-Section 2 is the little trick that makes it all work: it counters what the shader will internally do to the Normal vector to convert it to a Reflection Vector before using it on reflections, making our refraction vector actually used as we need it.
+Section 2 is **the little trick that makes it all work**: it counters what the shader will internally do to the Normal vector (to convert it to a Reflection Vector before using it on reflections), making our refraction vector actually used as we need it.
 
 And with that we have working refractions with an IOR parameter (set to 2.5 in this case):
 ![Fixed SSR](../posts/2026-09-26-06-refractionworking.jpg)
 
 ## Finishing up
 
-Refraction works but it looks rather flat. In this case we've clearly made something that looks like solid glass but it's missing the reflections.
+The refraction works but it looks rather flat. In this case we've clearly made something that looks like solid glass but it's missing the reflections.
 I played around with the Clear Coat shading model but even with 'Clear Coat Enable Second Normal' activated in the Project Settings and making a specific Second Normal in the material I couldn't quite get it to work. Another challenge for another day.
 
 For now I've added a Translucent Overlay Material to get additional reflections on top. It incurs on some overdraw but at least it's guaranteed the solid version will always be behind it so overdraw will not stack up. And we can use the 'Overlay Material Max Draw Distance' value to cull it.
@@ -107,7 +111,7 @@ I've also added a dark Fresnel to the material to match real life refraction beh
 
 Since we're using the actual geometry normals (and supporting the use of a Normalmap) the refraction will look correct regardless of the mesh. However the effect is somewhat inaccurate on flat geometry so it's not fit to represent a clean glass pane or to replace the use of Translucency for things like particles.
 
-Here's a final test with a couple other shapes and colors, and even increasing the Roughness on the sphere to have blurry refractions.
+Here's a final test with a couple other shapes and colors, and even increasing the Roughness on the sphere to have blurry refractions (which shows a pinch at the center, and is limited to 0.3 before it starts to degrade).
 ![Other shapes](../posts/2026-09-26-08-othershapes.jpg)
 
 ## What about performance?
