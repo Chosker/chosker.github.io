@@ -53,7 +53,7 @@ Here's the default behavior vs the edited cvar:
 
 #### Option 2: Engine Shader Edit
 
-With a quick edit to the Engine Shaders we can get the behavior we need without degrading the reflections. As we're only editing the engine Shaders (but not the code) we only need to edit a text file as I've shown before in my post about [Editing the Engine Shaders](https://chosker.github.io/blog/editing-engine-shaders).
+With a quick edit to the Engine Shaders we can get the behavior we need without degrading the reflections. As we're only editing the engine Shaders (but not the code) we only need to edit a text file on the Launcher version of Unreal as I've shown before in my post about [Editing the Engine Shaders](https://chosker.github.io/blog/editing-engine-shaders).
 
 We need to edit the `Engine\Shaders\Private\Lumen\LumenReflectionTracing.usf` file. As of UE 5.8 in line 191 you'll find the following code:
 ```hlsl
@@ -79,10 +79,12 @@ float3 GeometryWorldNormal = normalize(cross(PRt - PLf, PDn - PUp));
 float3 RayDir = normalize(TranslatedWorldPosition - View.TranslatedWorldCameraOrigin);
 if (bHit && dot(WorldNormal, GeometryWorldNormal) > -0.75)
 {
-				bHit = false;
+	bHit = false;
 }
 // Skip inwards SS Reflection hits to allow cheap Refraction - End
 ```
+The code reconstructs the World Normal so it can compare it against the edited Normal to determine if it's inside out to skip SSR on that pixel.
+
 As you can see the code is sampling the Scene Depth Texture 4 times which on paper should add some cost. In practice I did not notice the slightest performance hit but depending on your target spec your mileage may vary.
 
 And with that we've fixed SSR's behavior:
@@ -116,7 +118,9 @@ Here's a final test with a couple other shapes and colors, and even increasing t
 
 ## What about performance?
 
-We're still using Lumen Reflections here so the cost of the basic refraction part is the same, plus the marginal cost of the normals manipulation in the Material. Anything on top (such as an Overlay Material) is really up to you to manage the cost.
+We're still using Lumen Reflections here so the cost of the basic refraction part is the same, plus the marginal cost of the normals manipulation in the Material and the 4x neighbor Depth buffer sample in the engine edit. All of this is minimal and very much worth it if you want this kind of effect, but as usual you should profile on your specific target hardware.
+
+Anything on top (such as an Overlay Material) is really up to you to manage the cost.
 
 ## Comments?
 If you have any comments or questions feel free to reply to the relevant [Twitter post](#), [Bluesky post](#), [ArtStation post](#), [LinkedIn post](#) or [Reddit post](#).
