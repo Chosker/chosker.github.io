@@ -1,10 +1,10 @@
 ---
-title: Opaque Refraction with Lumen Reflections
+title: Cheap Refraction using inverted Reflections
 tags: [UE5, Shaders]
 techs: [ue5, hlsl]
 style: 
 color: 
-description: Cheap Opaque Refraction using inverted Reflections with Lumen
+description: Refraction on Opaque Materials using inverted Reflections with Lumen
 ---
 
 Many years ago I came across this UE4 [forum post](https://forums.unrealengine.com/t/abusing-ue4s-reflection-system-for-cheap-translucency/215871) by ThomasKole where he'd alter the Normal in the material to point inwards, turning reflections inside out effectively making them act somewhat as a refraction.
