@@ -9,7 +9,7 @@ description: Refraction on Opaque Materials using inverted Reflections with Lume
 
 Many years ago I came across this UE4 [forum post](https://forums.unrealengine.com/t/abusing-ue4s-reflection-system-for-cheap-translucency/215871) by ThomasKole where he'd alter the Normal in the material to point inwards, turning reflections inside out effectively making them act somewhat as a refraction.
 
-The idea seemed great as it allowed rendering objects as refractive without the typical issues that come with a Translucent shader: overdraw cost, poor lighting and shadowing, sorting issues, etc.
+The idea seemed great as it allowed rendering **opaque objects as see-through** and potentially refractive, without the typical issues that come with a Translucent shader: overdraw cost, poor lighting and shadowing, sorting issues, etc.
 I tried it back then but the results didn't seem convincing. The provided method was limited to a see-through effect as opposed to a distorted refraction and it had artifacts with SSR. The idea stayed in the back of my mind though.
 
 Recently I saw artstation post from [Vishal Ranga](https://www.artstation.com/artwork/WXyxgJ) that sparked my interest in this technique again. It was great to see it in UE5 using Lumen but it had some of the same limitations as the original post. So I started my little journey.
