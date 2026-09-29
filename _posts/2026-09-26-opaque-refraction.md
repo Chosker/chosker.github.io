@@ -123,4 +123,4 @@ We're still using Lumen Reflections here so the cost of the basic refraction par
 Anything on top (such as an Overlay Material) is really up to you to manage the cost.
 
 ## Comments?
-If you have any comments or questions feel free to reply to the relevant [Twitter post](https://x.com/ChoskerSanz/status/2103814211864518712), [Bluesky post](https://bsky.app/profile/did:plc:w44geey7hay5myrijlxct4ch/post/3mwg7vzhkbs2b) or [LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7509580370351235072/).
+If you have any comments or questions feel free to reply to the relevant [Twitter post](https://x.com/ChoskerSanz/status/2103814211864518712), [Bluesky post](https://bsky.app/profile/did:plc:w44geey7hay5myrijlxct4ch/post/3mwg7vzhkbs2b), [LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7509580370351235072/) or [ArtStation post](https://www.artstation.com/artwork/8vBm6x).
